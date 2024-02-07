@@ -1,0 +1,90 @@
+header{
+    height: 65vh;
+}
+
+.header_left{
+    margin-top: -100px;
+}
+
+.header_left h1{
+    letter-spacing: 0.4em;
+}
+
+.nav_container h4{
+    letter-spacing: 0.1em;
+}
+
+.program{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: linear-gradient(1deg, #d5d5d5, #9099a2);
+}
+
+.program h2{
+    background: transparent;
+}
+
+.course_info{
+    height: 400px;
+    padding: 2rem;
+    background: #9099a2c2;
+    border-radius: 0 0 35px 35px;
+    transition: 0.3s;
+}
+
+.course_info:hover{
+    background: transparent;
+}
+
+.coursee_info{
+    margin-top: 2rem;
+    height: 100px;
+    padding: 2.5rem;
+    background: #9099a2;
+    border-radius: 1.5rem;    
+    transition: var(--transition);
+}
+
+.coursee_info:hover{
+    background: #d5d5d5;
+    transition: var(--transition);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.coursee_info ul {
+    display: none;
+}
+
+.coursee_info:hover ul {
+    display: block;
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    background: #9099a2e6;
+    border-radius: 10px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1024px){
+    .header_left{
+        margin-top: -280px;
+    }
+
+    header{
+        height: 40vh;
+    }
+}
+@media screen and (max-width: 600px){
+    section h2{
+        margin-top: 1rem;
+    }
+
+    .header_left{
+        margin-top: -100px;
+    }
+    
+    header{
+        height: 65vh;
+    }
+}

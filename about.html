@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <style>
+    /* The Modal (background) */
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    height: 100%;
+    width: 95%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav_container">
+            <img class="logoma" src="images/logoma.png" alt="">
+            <a href="index.html"><h4>MA Zainul Hasan 1 Genggong</h4></a>
+            <ul class="nav_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+
+    <video autoplay loop muted plays-inline style="height: 500px;">
+        <source src="video/autoplay.mp4">
+    </video>
+    <header>
+        <div class="container header_container" >
+            <div class="bg-image"></div>
+            <div class="header_left" style="color: white;">
+                <h1>About Us</h1>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <section class="about_achievements">
+        <div class="container about_achievements-container">
+            <div class="about_achievements-left">
+                <img src="images/nun.png" alt="">
+            </div>
+
+            <div class="about_achievements-right">
+                <h1>Sambutan Kepala Madrasah</h1>
+                <p>Assalamu’alaikum Warohmatullahi Wabarokatuh. <br>
+                Hamdan lillah, tabaaroka wata’ala Wa Musholliyan ala Rosulillah.
+                Atas nama pribadi mewakili segenap Pimpinan Madrasah Aliyah serta Dewan Asatid mengucapkan selamat atas hadirnya Website Madrasah Aliyah Zainul Hasan 1 Genggong yang launchingnya pada hari kamis tanggal 22 Mei 2014, bertepatan dengan acara Pisah kenang untuk kelas XII Putri. <br>
+                Semoga, dengan hadirnya Website MA Zaha 1 Genggong, kita bisa ikut berpartisipasi dalam pengembangan informasi melalui media IT yang sudah berkembang pesat di era ini. Harapan kami, tim website yang sudah terbentuk dapat memberikan warna baru bagi kemaslahatan Madrasah serta mengupdate informasi terbaru bagi pembaca terutama dalam cakupan dunia maya. Website MA Zainul Hasan 1 Genggong hadir untuk menunjukkan existensi kreatifitas lembaga dalam menunjang kemampuan ber-IT untuk menampilkan berbagai kegiatan yang ada di Madrasah, intra maupun extra, terutama kegiatan-kegiatan unggulan kami agar bisa diterima dengan cepat di masyarakat. Website ini pula, kami niatkan sebagai media dakwah bil qolam yang contentnya akan kami muat dari hasil pemikiran dan ide para santri-santri yang berada di bawah naungan lembaga aliyah. Sekali lagi, kami mengucapkan selamat atas hadirnya Website MA. Zainul Hasan 1 Genggong. Semoga bermanfaat.   <br>               Wassalamu’alaikum, wr.wb.
+                <br>
+                Genggong; 22 Mei 2014
+                Hormat kami:
+                Kepala Madrasah
+                    
+                    KH. Ahsan Maliki, S.Sy</p>
+                <div class="achievements_cards">
+                    
+                    <article data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="achievements_card">
+                        <span class="achievement_icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </span> <br>
+                        <a style="color: black;">Fasilitas </a>
+                        <ul>
+                            <li> <a href="fasilitasbot.html">Robot SiMumtaz</a> </li>
+                            <li> <a href="fasilitaslabmm.html">Lab Multimedia</a> </li>
+                            <li> <a href="fasilitaslabkom.html">Lab Komputer</a> </li>
+                            <li> <a href="fasilitasperpus.html">Perpustakaan</a> </li>
+                        </ul>
+                    </article>
+
+                    <article data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="achievements_card">
+                        <span class="achievement_icon">
+                            <i class="fa-solid fa-users"></i>
+                        </span><br>
+                        <a href="https://ppsb.mazainulhasan1.sch.id/" style="color: black;">Pendaftaran</a>
+                    </article>
+
+                    <article data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="achievements_card">
+                        <span class="achievement_icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </span><br>
+                        <a href="awards.html" style="color: black;">Awards</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="container team_container">
+            <article data-aos="zoom-in" class="team_member">
+                <img src="images/Zaenih, S.HI.JPG" alt="">
+                <div class="team_member-socials">
+                    <div class="sosmed">
+                        <a href="https://www.instagram.com/zainizainuri/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.tel.onl/#@zaenih" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://web.facebook.com/zaini.zainuri.54" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <h4>Zaini Zainuri, S.Hi</h4>
+                    <p>Wakil Kepala Kesiswaan</p>
+                </div>
+            </article>
+
+
+            <article data-aos="zoom-in" class="team_member">
+                <img src="images/Sholihin, S.HI.JPG" alt="">
+                <div class="team_member-socials">
+                    <div class="sosmed">
+                        <a href="https://www.instagram.com/lihincan/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.tel.onl/#@LihinCan" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://web.facebook.com/paklihinaja" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <h4>Sholihin, S.Hi</h4>
+                    <p>Wakil Kepala Kurikulum</p>
+                </div>
+            </article>
+
+            <article data-aos="zoom-in" class="team_member">
+                <img src="images/Ahmad Juwaini Muhsin, S.Ag.JPG" alt="">
+                <div class="team_member-socials">
+                    <div class="sosmed">
+                        <a href="https://www.instagram.com/juwen2771/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.tel.onl/#@Jo3w3n" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=100004179876342" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <h4>Ahmad Juwaini M, S.Ag</h4>
+                    <p>Bendahara Sekolah</p>
+                </div>
+            </article>
+
+
+            <article data-aos="zoom-in" class="team_member">
+                <img src="images/Ach. Bakir Basuni, SH.JPG" alt="">
+                <div class="team_member-socials">
+                    <div class="sosmed">
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=100085258027151" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <h4>Ach. Bakir Basuni, S.H</h4>
+                    <p>Guru B. Inggris</p>
+                </div>
+            </article>
+
+            
+            <article data-aos="zoom-in" class="team_member">
+                <img src="images/A. Muhibbul Firdaus, S.PdI.JPG" alt="">
+                <div class="team_member-socials">
+                    <div class="sosmed">
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.tel.onl/#@abi_Fardhan" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://web.facebook.com/abi.fardhan.1983" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <h4>A. Muhibbul Firdaus, S.Pd.I</h4>
+                    <p>Guru B. Arab</p>
+                </div>
+            </article>
+
+            
+            <article data-aos="zoom-in" class="team_member">
+                <img src="images/Amaris Subiantoro, S.PdI.JPG" alt="">
+                <div class="team_member-socials">
+                    <div class="sosmed">
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.tel.onl/#@Amaris87" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://web.facebook.com/amaris.amaris.3532" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <h4>Amaris Subiantoro, S.Pd.I</h4>
+                    <p>Guru PKN</p>
+                </div>
+            </article>
+
+            
+            <article data-aos="zoom-in" class="team_member">
+                <img src="images/Moh. Hendra, M.PdI.JPG" alt="">
+                <div class="team_member-socials">
+                    <div class="sosmed">
+                        <a href="https://www.instagram.com/hendramhd35/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.tel.onl/#@MohammadHendra" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://web.facebook.com/hendra.senyum" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <h4>Moh. Hendra, M.Pd.I</h4>
+                    <p>Guru SKI</p>
+                </div>
+            </article>
+
+            
+            <article data-aos="zoom-in" class="team_member">
+                <img src="images/Yanto, M.Si.JPG" alt="">
+                <div class="team_member-socials">
+                    <div class="sosmed">
+                        <a href="https://www.instagram.com/yan.to87/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.tel.onl/#@yanto87" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://web.facebook.com/yan.to1987" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <h4>Yanto, M.Si</h4>
+                    <p>Guru Sosiologi</p>
+                </div>
+            </article>
+
+            
+            <article data-aos="zoom-in" class="team_member">
+                <img src="images/Mariyatul Qibtiyah, S.Ag.JPG" alt="">
+                <div class="team_member-socials">
+                    <div class="sosmed">
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.tel.onl/#@M3_ry" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <h4>Mariyatul Qibtiyah, S.Ag</h4>
+                    <p>Guru Fikih</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="output">
+        <div class="out">
+            <h2>Output Lulusan</h2>
+            <div class="lulusan">
+                <video data-aos="zoom-in-down" src="video/ali usman.mp4"controls></video>
+                <video data-aos="zoom-in-down" src="video/m rizqil hasan.mp4"controls></video>
+                <video data-aos="zoom-in-down" src="video/muhammad alwi al maliki.mp4"controls></video>
+                <video data-aos="zoom-in-down" src="video/muhammad nurkholis.mp4"controls></video>
+                <video data-aos="zoom-in-down" src="video/siti aisyah.mp4"controls></video>
+                <video data-aos="zoom-in-down" src="video/wardatul.mp4"controls></video>
+            </div>
+        </div>
+    </section>
+
+    <section class="contactus"> 
+        <div class="container contact_container" >
+            <img src="images/gedug.jpg" alt="">
+            <div  class="contact" style="color: white;">
+                <p>"Terbentuknya Insan religius, cerdas, peduli dan mandiri"</p><br>
+                <a id="contact" href="contact.html">  Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo"><h4>MA Zainul Hasan 1 Genggong</h4></a>
+                <p>
+                    Madrasah Mumtaz Berkualitas!
+                </p>
+                <iframe width="200" height="140" src="https://www.youtube.com/embed/cWrqxdyQZgc" title="PROFIL MA ZAHA 1 GENGGONG 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+
+                <ul class="footer_socials">
+                    <li>
+                        <a href="https://web.facebook.com/mazahagenggong"><i class="fa-brands fa-facebook"></i>    Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ma_zahagenggong/"><i class="fa-brands fa-instagram"></i>    Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCXOCL1sEfJF1-C2N0pZEi9Q"><i class="fa-brands fa-twitter"></i>    Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/MA+Zainul+Hasan+1+Genggong/@-7.7890291,113.373065,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd7aaaf24fac047:0x55656b10eb95ef72!8m2!3d-7.7890184!4d113.3751681"><i class="fa-solid fa-location-dot"></i>    Lokasi</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@ma_zahagenggong"><i class="fa-brands fa-tiktok"></i>    Tik Tok</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+            <div class="footer_copyright">
+                <small>Copyright & copy; Elok Faiqoh</small>
+            </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+</body>
+</html>

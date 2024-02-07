@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fasilitas.css">
+    <style>
+        #fasilitas .fotofasilitas{
+            display: block;
+        }
+        #fasilitas .isifasilitas p{
+            margin-top: 35px
+        }
+        #fasilitas .fasilitas_container img{
+            width: 70%;
+            margin: 1px auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="container nav_container">
+            <img class="logoma" src="images/logoma.png" alt="">
+            <a href="index.html"><h4>MA Zainul Hasan 1 Genggong</h4></a>
+            <ul class="nav_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+    <div id="fasilitas" >
+        <div class="container fasilitas_container">
+            <div class="isifasilitas">
+                <h2>Aromaza</h2>
+                <div class="fotofasilitas">
+                    <a href="#" id="mm_modal_btn"><img src="images/labmm.jfif" alt=""></a>
+                </div>
+                <p style="text-align: center;" >MA Zaha memfasilitasi siswa siswi dengan lab MM ini. Jadi para siswa yang mengikuti PRODISTIK dengan jurusan Multimedia bisa belajar praktik menggunakan kamera dan alat alat lainnya langsung. Ada sekitar 5 kamera, 1 Gimbal, 3 Tripod, 2 audio record dan masih banyak lagi.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo"><h4>MA Zainul Hasan 1 Genggong</h4></a>
+                <p>
+                    Madrasah Mumtaz Berkualitas!
+                </p>
+                <iframe width="200" height="140" src="https://www.youtube.com/embed/cWrqxdyQZgc" title="PROFIL MA ZAHA 1 GENGGONG 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        
+
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+
+                <ul class="footer_socials">
+                    <li>
+                        <a href="https://web.facebook.com/mazahagenggong"><i class="fa-brands fa-facebook"></i>    Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ma_zahagenggong/"><i class="fa-brands fa-instagram"></i>    Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCXOCL1sEfJF1-C2N0pZEi9Q"><i class="fa-brands fa-twitter"></i>    Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/MA+Zainul+Hasan+1+Genggong/@-7.7890291,113.373065,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd7aaaf24fac047:0x55656b10eb95ef72!8m2!3d-7.7890184!4d113.3751681"><i class="fa-solid fa-location-dot"></i>    Lokasi</a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@ma_zahagenggong"><i class="fa-brands fa-tiktok"></i>    Tik Tok</a>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div id="modal_mm" class="modal">
+                <div class="modal-content">
+                    <span id="close" class="close_mm">&times;</span>
+                    <img src="images/labmm.jfif" alt="Foto">
+                </div>
+            </div>
+
+            </div>
+
+            <div class="footer_copyright">
+                <small>Copyright & copy; Elok Faiqoh</small>
+            </div>
+    </footer>
+
+    
+    <script src="js/main.js"></script>
+    <script>
+        
+
+
+
+        var modal_mm = document.getElementById("modal_mm");
+
+        var btn_mm = document.getElementById("mm_modal_btn");
+
+        var span_mm = document.getElementsByClassName("close_mm")[0];
+
+        btn_mm.onclick = function() {
+            modal_mm.style.display = "block";
+        }
+        span_mm.onclick = function() {
+            modal_mm.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal_mm) {
+                modal_mm.style.display = "none";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

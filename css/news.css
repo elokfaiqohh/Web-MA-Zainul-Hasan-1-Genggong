@@ -1,0 +1,142 @@
+header{
+    height: 65vh;
+}
+
+.header_left{
+    margin-top: -100px;
+}
+
+.header_left h1{
+    letter-spacing: 0.4em;
+}
+
+.nav_container h4{
+    letter-spacing: 0.1em;
+}
+
+#berita {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8vw;
+    padding-top: 120px;
+    box-shadow: inset 0 0 1rem rgb(9 52 10 / 75%);
+}
+
+#berita .berita_container {
+    width: 60%;
+}
+
+#berita .berita_container img {
+    width: 100%;
+    border-radius: 19px;
+    border: inset;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+#berita .berita_container .isiberita {
+    padding-bottom: 60px;
+}
+
+#berita .berita_container .isiberita h3{
+    color: #29303b;
+    padding: 15px 0 10px 0;
+}
+
+#berita .berita_container .isiberita p{
+    color: #757373;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+#berita .berita_container .isiberita a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #586674;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#berita .cate {
+    width: 30%;
+    text-align: center;
+}
+
+#berita .cate h2 {
+    padding-bottom: 7px;
+}
+
+#berita .cate a{
+    text-decoration: none;
+    color: #757373;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+#berita .blogpost {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#berita .blogpost p {
+    text-align: justify;
+    padding-bottom: 60px !important;
+}
+
+.cate{
+    letter-spacing: 0.2em;
+}
+
+.berita_container h2{
+    letter-spacing: 0.2em;
+    margin-left: 250px;
+}
+
+
+@media screen and (max-width:1024px) {
+    header{
+        height: 42vh;
+    }
+
+    .header_left{
+        margin-top: -280px;
+    }
+    
+    #berita .berita_container {
+        width: 60%;
+    }
+
+    #berita .cate {
+        width: 30%;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    header{
+        height: 65vh;
+    }
+    
+    .header_left{
+        margin-top: -100px;
+    }
+    
+    #berita {
+        display: block;
+        padding-top: 170px;
+    }
+
+    #berita .berita_container {
+        width: 100%;
+    }
+
+    #berita .cate {
+        display: none;
+    }
+}
+

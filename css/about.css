@@ -1,0 +1,423 @@
+header{
+    height: 65vh;
+}
+
+video{
+    position:absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header_left{
+    margin-top: -100px;
+}
+
+.header_left h1{
+    letter-spacing: 0.4em;
+}
+
+.nav_container h4{
+    letter-spacing: 0.1em;
+}
+
+/* ============================ ACHIEVEMENTS ==============================*/
+.about_achievements{
+    background: linear-gradient(180deg, #9099a2, #d5d5d5);
+    padding-top: 8rem;
+}
+
+.about_achievements-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about_achievements-right > p {
+    margin: 1.6rem 0 2.5rem;
+    overflow: auto;
+    text-align: justify;
+    height: 300px;
+}
+
+.achievements_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+.achievements_card{
+    background: var(--color-bg1);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+}
+
+.achievements_card ul{
+    display: block;
+    position: absolute;
+    margin: auto;
+    display: block;
+    background-color: #ddd;
+    width: 200px;
+    z-index: 99;
+}
+
+.achievements_card ul li{
+    display: none;
+}
+
+.achievements_card:hover ul li{
+    display: block;
+    position: relative;
+    background: #9099a2ab;
+    padding: 10px;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+.achievements_card:hover{
+    background: #9099a2;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.achievements_icon{
+    background: var(--color-danger);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.achievements_card:nth-child(2) .achievements_icon{
+    background: var(--color-success);
+}
+
+.achievements_card:nth-child(3) .achievements_icon{
+    background: var(--color-primary);
+}
+
+.achievements_card p{
+    margin-top: 1rem;
+}
+
+.achievements_card a{
+    cursor: pointer;
+    color: #000;
+}
+/*
+.achievements_card .dropdown_fasilitas:hover{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: linear-gradient(1deg, #3fad528c, transparent);
+}
+
+.dropdown_fasilitas{
+    display: none;
+}
+
+.dropdown_fasilitas ul{
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_fasilitas ul li{
+    width: 175px;
+}
+*/
+/* ============================ TEAM ==============================*/
+.team{
+    background: linear-gradient(1deg,#9099a2, #9099a25e);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.team_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7rem;
+    margin: 0 auto;
+}
+
+ 
+.team_member:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.team_member img{
+    transition: 1s;
+    transition: var(--transition);
+    filter: blur(3px);
+    padding-top: 4rem;
+}
+
+.team_member:hover img{
+    filter: none;
+    transform: scale(1.1);
+    transition: all .3s ease-in;
+}
+
+.team_member-info p{
+    color: var(--color-light);
+}
+/*
+.team_member-socials{
+    position: absolute;
+    text-align: center;
+    bottom: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    width: fit-content;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+    margin: auto;
+}
+*/
+
+.team_member-socials > p{
+    text-align: center;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.team_member-socials > h4{
+    text-align: center;
+    margin: -50px;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.sosmed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid silver;
+    padding-bottom: 3.5rem;
+}
+
+.team_member-socials{
+    transition: var(--transition);
+}
+
+.team_member:hover .team_member-socials {
+    bottom: 40%;
+    transition: 3s;
+}
+
+.team_member-socials a{
+    padding: 1rem;
+
+}
+
+#video{
+    width: 200px;
+
+}
+
+.output{
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    background: linear-gradient(1deg, #d5d5d5, #9099a2);
+    padding: 2rem;
+}
+
+.out{
+    padding: 80px;
+}
+
+.lulusan{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.lulusan video{
+    width: 300px;
+    height: 330px;
+    position: relative;
+    object-fit: cover;
+}
+
+.contact_container{
+    padding-top: 110px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.contact_container img{
+    filter: saturate(0.5);
+}
+
+.contact {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.78); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.contact a{
+    color: #000;
+    padding: 15px;
+    background-color: #d5d5d5b3;
+    transition: all 1s;
+    border-radius: 10px;
+}
+
+.contact a:hover{
+    background-color: #586674;
+    color: white;
+}
+
+/* ============================ MEDIA QUERY (TABLETS) ==============================*/
+@media screen and (max-width: 1024px){
+    header{
+        height: 40vh;
+    }    
+
+    .header_left{
+        margin-top: -280px;
+    }
+
+    .about_achievements-left img{
+        width: 65%;
+    }
+
+    .about_achievements-container{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about_achievements-left{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact_container img{
+        height: 350px;
+    }
+
+    .team_container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .team_member{
+        padding: 1rem;
+    }
+
+    .lulusan{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .out{
+        padding: 50px;
+    }
+
+    .lulusan video{
+        height: 500px;
+    }
+}
+
+
+/* ============================ MEDIA QUERY (TABLETS) ==============================*/
+@media screen and (max-width: 600px ){
+    .nav_container h4{
+        margin-left: 10px
+    }
+    
+    header{
+        height: 65vh;
+    }
+    
+    .header_left{
+        margin-top: -100px;
+    }
+
+    .achievements_cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .achievements_card a{
+        font-size: 12px;
+    }
+
+    .team{
+        padding: 50px;
+    }
+
+    .team_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .team_member{
+        padding: 0;
+    }
+
+    .team_member h4{
+        font-size: 1rem;
+    }
+
+    .team_member p{
+        margin-bottom: 4.5rem;
+    }
+
+    .team_member img{
+        padding-top: 1rem;
+    }
+
+    .team_container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sosmed{
+        padding-bottom: 4rem;
+    }
+
+    .contact{
+        width: 80%;
+    }
+
+    .out{
+        padding: 25px;
+    }
+
+    .lulusan{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .lulusan video{
+        height: 300px;
+        width: 270px;
+    }
+
+    .contact_container {
+        padding-top: 0;
+    }
+}

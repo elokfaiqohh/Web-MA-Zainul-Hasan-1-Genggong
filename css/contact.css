@@ -1,0 +1,155 @@
+section{
+    padding:8rem 0 0;
+}
+
+.nav_container h4{
+    letter-spacing: 0.1em;
+}
+
+.contact{
+    background: linear-gradient(180deg, #d5d5d5, transparent);
+}
+
+.contact_container{
+    background: #58667470;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+/*============================ ASIDE =============================*/
+.contact_aside{
+    background: #d5d5d5de;
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+    border: 3px solid #586674;
+}
+
+.aside_image{
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.aside_image img{
+    width: 60%;
+}
+
+.contact_aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact_aside p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.contact_details li{
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact_socials{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.btn{
+    color: #fff;
+    background:  #586674;
+}
+.contact_socials a{
+    background:  #5866746b;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.contact_socials a:hover{
+    background: transparent;
+}
+
+/*============================ FORM =============================*/
+.contact_form{
+    display: flex;   
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.form_name{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact_form input[type="text"] {
+    width: 50%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg1);
+    color: #000;
+}
+
+.contact_form .btn{
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+/*============================ MEDIA QUERY (TABLETS) =============================*/
+@media screen and (max-width: 1024px) {
+    
+    .contact_container{
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .contact_aside{
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .contact_form{
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+
+/*============================ MEDIA QUERY (PHONES) =============================*/
+@media screen and (max-width: 600px) {
+    .contact_container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .contact_form{
+        margin: 0 1.5rem 3rem;
+    }
+
+    .form_name{
+        flex-direction: column;
+    }
+
+    .form_name input[type="text"] {
+        width: 100%;
+    }
+}
